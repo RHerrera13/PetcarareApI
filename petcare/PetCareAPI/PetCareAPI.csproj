@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="Dapper" Version="2.1.66" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.6" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.12.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.12.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CAPA_ENTIDADES\CAPA_ENTIDADES.csproj" />
+    <ProjectReference Include="..\CAPA_NEGOCIO\CAPA_NEGOCIO.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+</Project>
